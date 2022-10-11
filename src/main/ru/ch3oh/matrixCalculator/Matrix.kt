@@ -190,9 +190,6 @@ class Matrix (matrix: Array<Array<Double>>) {
             throw ArithmeticException("Determinant is zero")
         }
         val inv = this.inverse()
-        if ((this.rank() != inv.rank()) or (this.rank() != this.getRows())) {
-            throw ArithmeticException("This system is undefined")
-        }
         return inv * b
     }
     override fun toString(): String{

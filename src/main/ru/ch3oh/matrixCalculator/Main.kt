@@ -65,9 +65,10 @@ fun main() {
         println()
         println("Итоговая вторая матрица:")
         println(secondMatrix)
-        println()
-        println("Итог: ")
+
     }
+    println()
+    println("Итог: ")
     when (action) {
         Action.SUM -> println(firstMatrix + secondMatrix)
         Action.SUBTRACTION -> println(firstMatrix - secondMatrix)
